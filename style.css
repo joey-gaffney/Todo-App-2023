@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500;600&display=swap');
+*{
+    margin: 0; padding: 0; box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    padding: 0px 10px;
+    font-size: 1.2rem;
+    position: relative;
+    overflow-x: hidden;
+    /* background: url(/milad-fakurian-PGdW_bHDbpI-unsplash.jpg) center/cover; */
+}
+/* body::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.261);
+} */
+.hero{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    /* height: 100px; */
+    height: 70px;
+}
+.toggle-button{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: black;
+    font-size: 1.5rem;
+}
+.navbar-links{
+    position: absolute;
+    top: 70px;
+    /* right: 40px; */
+    /* top: 70px; */
+    right: 0;
+    padding: 20px 30px;
+    border-radius: 12px 0px 0px 12px;
+    display: none;
+    background-color: mediumslateblue;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    animation: slidein .3s;
+}
+.navbar-links.active{
+    display: flex;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+li i{
+    font-size: 1.8rem;
+    transition: all .3s;
+    color: white;
+}
+li i:hover{
+    transform: scale(1.1);
+    opacity: .8;
+}
+.fa-twitter{
+    /* color: #1DA1F2; */
+}
+.fa-linkedin-in{
+    /* color: #0072b1; */
+}
+.fa-facebook{
+    /* color: #4267B2; */
+}
+.fa-instagram{
+    /* color: rgb(161, 68, 88); */
+}
+.fa-youtube{
+    /* color: #FF0000; */
+}
+
+/* @keyframes slidein {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  } */
+@keyframes slidein {
+    from {
+      right: -100px;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+
+  .main{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* gap: 50px; */
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  img{
+    max-width: 600px;
+    border-radius: 7px;
+  }
+  .tools{
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 10px;
+    font-weight: 400;
+  }
+  .fa-js{
+    color: rgb(255, 255, 19);
+    background-color: black;
+  }
+  .fa-react{
+    color: rgb(0, 157, 255);
+  }
+  .fa-css3-alt{
+    color: rgb(42, 153, 221);
+  }
+  .button{
+    text-align: center;
+  }
+
+  .text a{
+    text-decoration: none;
+    padding: 12px 24px;
+    display: inline-block;
+    background-color: rgb(41, 173, 255);
+    color: white;
+    border-radius: 4px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    transition: all .3s;
+  }
+  .text a:hover{
+    opacity: .8;
+  }
+
+  @media screen and (max-width: 990px) {
+    .main{
+        margin: 150px 0px 0px 0px;
+        gap: 50px;
+        text-align: center;
+    }
+    img{
+        max-width: 100%;
+    }
+  }
