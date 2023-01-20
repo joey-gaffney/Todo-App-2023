@@ -140,7 +140,7 @@ li i:hover{
     margin-top: 10px;
     font-weight: 400;
   }
-  .fa-js{
+  /* .fa-js{
     color: rgb(255, 255, 19);
     background-color: black;
   }
@@ -149,7 +149,7 @@ li i:hover{
   }
   .fa-css3-alt{
     color: rgb(42, 153, 221);
-  }
+  } */
   .button{
     text-align: center;
   }
@@ -166,6 +166,19 @@ li i:hover{
   }
   .text a:hover{
     opacity: .8;
+  }
+
+  .info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .info-box{
+    max-width: 800px;
+    padding: 40px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    margin-bottom: 40px;
+    border-radius: 8px;
   }
 
   @media screen and (max-width: 990px) {
