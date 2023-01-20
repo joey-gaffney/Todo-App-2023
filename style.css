@@ -8,6 +8,7 @@ body{
     font-size: 1.2rem;
     position: relative;
     overflow-x: hidden;
+    min-height: 100vh;
     /* background: url(/milad-fakurian-PGdW_bHDbpI-unsplash.jpg) center/cover; */
 }
 /* body::before{
@@ -19,6 +20,13 @@ body{
     left: 0;
     background-color: rgba(0, 0, 0, 0.261);
 } */
+.logo{
+  position: absolute;
+  width: 150px;
+  top: -35px;
+  left: 0;
+  z-index: -1;
+}
 .hero{
     min-height: 100vh;
     display: flex;
@@ -114,13 +122,17 @@ li i:hover{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    /* gap: 50px; */
     width: 100%;
+    max-width: 1200px;
     flex-wrap: wrap;
   }
   img{
     max-width: 600px;
     border-radius: 7px;
+    width: 100%;
+  }
+  .name{
+    color: mediumslateblue;
   }
   .tools{
     text-align: center;
@@ -161,8 +173,5 @@ li i:hover{
         margin: 150px 0px 0px 0px;
         gap: 50px;
         text-align: center;
-    }
-    img{
-        max-width: 100%;
     }
   }
