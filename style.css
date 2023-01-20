@@ -180,6 +180,14 @@ li i:hover{
     margin-bottom: 40px;
     border-radius: 8px;
     line-height: 1.6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .self{
+    /* width: 170px; */
+    /* max-width: 100%; */
+
   }
 
   @media screen and (max-width: 990px) {
@@ -187,5 +195,14 @@ li i:hover{
         margin: 150px 0px 0px 0px;
         gap: 50px;
         text-align: center;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .info-box{
+      flex-wrap: wrap;
+    }
+    .self{
+      width: 400px;
+      max-width: 100%;
     }
   }
