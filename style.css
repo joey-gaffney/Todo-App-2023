@@ -49,7 +49,12 @@ body{
     top: 20px;
     right: 30px;
     color: black;
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
+    text-decoration: none;
+    transition: .3s;
+}
+.toggle-button:hover{
+  opacity: .7;
 }
 .navbar-links{
     position: absolute;
@@ -63,6 +68,7 @@ body{
     background-color: mediumslateblue;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     animation: slidein .3s;
+    z-index: 1;
 }
 .navbar-links.active{
     display: flex;
@@ -183,12 +189,20 @@ li i:hover{
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
   }
   .self{
     /* width: 170px; */
     /* max-width: 100%; */
-
   }
+  .animate__animated.animate__fadeIn{
+    transition: all 10s;
+    animation-delay: .3s;
+  }
+  .animate__animated.animate__fadeInRight{
+    animation-delay: .8s;
+  }
+
 
   @media screen and (max-width: 990px) {
     .main{
